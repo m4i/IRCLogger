@@ -1,0 +1,21 @@
+<%- content_for :header do -%>
+	<div id="page_info">
+		<div class="pager date">
+			<div class="previous">
+				<%= link_to_date h('<<'), @previous_date %>
+			</div>
+			<div class="next">
+				<%= link_to_date h('>>'), @next_date %>
+			</div>
+			<div class="this">
+				<%= link_to_date format_date(@date), @date %>
+			</div>
+		</div>
+	</div>
+<%- end -%>
+
+<%= render :partial => 'messages', :locals => {
+	:date_row     => false,
+	:has_channel  => true,
+	:has_nickname => true,
+} %>

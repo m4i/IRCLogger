@@ -1,0 +1,55 @@
+one:
+  command:   PRIVMSG
+  channel:   staff
+  user:      sato
+  nickname:  sato
+  message:   "あつい〜"
+  timestamp: 2008-07-30 05:24:23
+
+two:
+  command:   PRIVMSG
+  channel:   tech
+  user:      suzuki
+  nickname:  suzuki__
+  message:   "これいいかも"
+  timestamp: 2008-07-30 13:28:52
+
+three:
+  command:   NOTICE
+  channel:   nanteyomu
+  user:      bot
+  nickname:  bot
+  message:   "svn: takahashi によって チェンジセット [852] がコミットされました (http://trac.example.com/wigit/changeset/852)"
+  timestamp: 2008-08-15 18:22:36
+
+four:
+  command:   PRIVMSG
+  channel:   tech
+  user:      tanaka
+  nickname:  tanaka
+  message:   "Emacsの本2冊持ってるんですが、誰か買いませんか？"
+  timestamp: 2008-08-29 04:51:24
+
+five:
+  command:   PRIVMSG
+  channel:   tech
+  user:      tanaka
+  nickname:  tanaka
+  message:   "http://www.amazon.co.jp/dp/4774120413/"
+  timestamp: 2008-08-29 04:52:46
+
+six:
+  command:   PRIVMSG
+  channel:   tech
+  user:      tanaka
+  nickname:  tanaka
+  message:   "http://www.amazon.co.jp/dp/4798110604/"
+  timestamp: 2008-08-29 04:52:52
+
+seven:
+  command:   PRIVMSG
+  channel:   tech
+  user:      watanabe
+  nickname:  watanabe_
+  message:   "これは空前の Emacs ブームが来ますね"
+  timestamp: 2008-08-29 05:05:55

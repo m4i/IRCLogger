@@ -1,0 +1,14 @@
+<%- content_for :head do -%>
+<%= javascript_include_tag 'vendor/jquery/jquery-ui-highlight-1.6rc2.min' %>
+<%= javascript_include_tag 'messages' %>
+<%= javascript_tag "var DATE_BY_PARAM = #{@date_by_param.to_json};" %>
+<%- end -%>
+<%= render :partial => '/head' -%>
+<%= render :partial => '/header' -%>
+
+<div id="content">
+<%= yield -%>
+</div>
+
+</body>
+</html>

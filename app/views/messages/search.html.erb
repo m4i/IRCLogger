@@ -1,0 +1,11 @@
+<%- content_for :header do -%>
+	<div id="page_info">
+		<h2>search: <%=h @search %></h2>
+	</div>
+<%- end -%>
+
+<%= render :partial => 'messages', :locals => {
+	:date_row     => true,
+	:has_channel  => true,
+	:has_nickname => true,
+} %>

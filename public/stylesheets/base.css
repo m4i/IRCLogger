@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* reset.css *************************************************************** */
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.5.1
+*/
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+/* to preserve line-height and selector appearance */
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*to enable resizing for IE*/
+input,textarea,select{*font-size:100%;}
+/*because legend doesn't inherit in IE */
+legend{color:#000;}
+/* *************************************************************** reset.css */
+
+
+/* fonts.css *************************************************************** */
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.5.1
+*/
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+/* original: body {font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;} */
+body {font:13px/1.231 "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,arial,helvetica,clean,"ＭＳ Ｐゴシック",sans-serif;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}
+/**
+ * Bump up IE to get to 13px equivalent
+ */
+/* original: pre,code,kbd,samp,tt {font-family:monospace;*font-size:108%;line-height:100%;} */
+pre,code,kbd,samp,tt {font-family:Consolas,monospace;*font-size:108%;line-height:100%;}
+/* *************************************************************** fonts.css */
+
+
+
+
+/* **** element **** */
+
+* {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+body {
+	color: #333;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+/* **** header **** */
+
+div#header {
+	position: fixed;
+	width: 100%;
+	background-image: url("../images/transparent.png");
+	background-repeat: repeat;
+}
+
+	div#header h1 {
+		margin: 20px 30px;
+		font-size: 250%;
+	}
+
+		div#header h1 a {
+			color: #333;
+			text-decoration: none;
+		}
+
+	div#header p#link_to_list {
+		position: absolute;
+		top: 15px;
+		right: 30px;
+	}
+
+		div#header p#link_to_list a {
+			color: #333;
+		}
+
+	div#header form {
+		position: absolute;
+		top: 35px;
+		right: 30px;
+	}
+
+		div#header form input#search {
+			width: 200px;
+		}
+
+	div#header div#page_info {
+		position: absolute;
+		bottom: 20px;
+		left: 200px;
+	}
+
+		div#header div#page_info a {
+			color: #333;
+			text-decoration: none;
+		}
+
+		div#header div#page_info h2 {
+			font-size: 138.5%;
+		}
+
+		div#header div#page_info div.pager {
+			color: #ccc;
+			font-family: Consolas, monospace;
+		}
+
+		div#header div#page_info div.date {
+			width: 15em;
+			font-size: 108%;
+		}
+
+		div#header div#page_info div.period {
+			width: 24em;
+			font-size: 93%;
+		}
+
+		div#header div#page_info div.pager div.previous {
+			float: left;
+		}
+
+		div#header div#page_info div.pager div.next {
+			float: right;
+		}
+
+		div#header div#page_info div.pager div.this {
+			text-align: center;
+		}
+
+
+/* **** content **** */
+
+div#content {
+	padding: 80px 20px 20px;
+}

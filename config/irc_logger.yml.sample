@@ -1,0 +1,7 @@
+bot:
+  host: localhost
+  port: 6667
+  nick: bot
+  user: bot
+  real: IRCLogger
+  pass: password

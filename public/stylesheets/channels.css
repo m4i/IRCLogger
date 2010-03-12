@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div#content table#channels {
+	width: 100%;
+}
+
+	table#channels th {
+		padding: 0.4em 0.7em;
+		color: #fff;
+		background-color: #6ad;
+		font-weight: bold;
+	}
+
+	table#channels td {
+		padding: 0.3em 0.7em 0.3em 1.0em;
+	}
+
+	table#channels tr.odd  td { background-color: #eff; }
+	table#channels tr.even td { background-color: #cff; }
+
+	table#channels th.name {
+		width: 30%;
+	}
+
+	table#channels td.name a {
+		color: #333;
+	}

@@ -1,0 +1,36 @@
+<table id="messages">
+	<tr>
+		<th class="time">Time</th>
+		<%- if has_channel -%>
+		<th class="channel">Channel</th>
+		<%- end -%>
+		<%- if has_nickname -%>
+		<th class="nickname">Nickname</th>
+		<%- end -%>
+		<th class="message">Message</th>
+	</tr>
+
+<%- reset_cycle -%>
+<%- date = nil -%>
+<%- date_colspan = 2 + (has_channel ? 1 : 0) + (has_nickname ? 1 : 0) -%>
+
+<%- @messages.each do |message| -%>
+	<%- if date_row && message.date != date -%>
+	<tr>
+		<td class="date" colspan="<%= date_colspan %>"><%= format_date(message.date) %></td>
+	</tr>
+	<%- date = message.date -%>
+	<%- end -%>
+
+	<tr id="message_<%=h message.id %>" class="<%=h row_class(message) %><%= ' notice' if message.notice? %>">
+		<td class="time"><%= format_time(message.timestamp) %></td>
+		<%- if has_channel -%>
+		<td class="channel"><%= link_to_channel_of message %></td>
+		<%- end -%>
+		<%- if has_nickname -%>
+		<td class="nickname"><%= link_to_user_of message %></td>
+		<%- end -%>
+		<td class="message"><%= format_message(message.message) %></td>
+	</tr>
+<%- end -%>
+</table>

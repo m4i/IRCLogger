@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+div#content table#messages {
+	width: 100%;
+	font-size: 93%;
+}
+
+	table#messages th {
+		padding: 0.4em 0.4em;
+		color: #fff;
+		background-color: #6ad;
+		font-weight: bold;
+	}
+
+	table#messages td {
+		padding: 0.2em 0.4em 0.2em 0.7em;
+	}
+
+	table#messages tr.channel_00_odd  td { background-color: #dff; }
+	table#messages tr.channel_00_even td { background-color: #cff; }
+	table#messages tr.channel_01_odd  td { background-color: #ffd; }
+	table#messages tr.channel_01_even td { background-color: #ffc; }
+	table#messages tr.channel_02_odd  td { background-color: #fdf; }
+	table#messages tr.channel_02_even td { background-color: #fcf; }
+	table#messages tr.channel_03_odd  td { background-color: #fdd; }
+	table#messages tr.channel_03_even td { background-color: #fcc; }
+	table#messages tr.channel_04_odd  td { background-color: #dfd; }
+	table#messages tr.channel_04_even td { background-color: #cfc; }
+	table#messages tr.channel_05_odd  td { background-color: #ddf; }
+	table#messages tr.channel_05_even td { background-color: #ccf; }
+	table#messages tr.channel_06_odd  td { background-color: #def; }
+	table#messages tr.channel_06_even td { background-color: #cef; }
+	table#messages tr.channel_07_odd  td { background-color: #efd; }
+	table#messages tr.channel_07_even td { background-color: #efc; }
+	table#messages tr.channel_08_odd  td { background-color: #fde; }
+	table#messages tr.channel_08_even td { background-color: #fce; }
+	table#messages tr.channel_09_odd  td { background-color: #edf; }
+	table#messages tr.channel_09_even td { background-color: #ecf; }
+	table#messages tr.channel_10_odd  td { background-color: #dfe; }
+	table#messages tr.channel_10_even td { background-color: #cfe; }
+	table#messages tr.channel_11_odd  td { background-color: #fed; }
+	table#messages tr.channel_11_even td { background-color: #fec; }
+
+	table#messages tr.user_00 td, table#messages tr.user_00 td.channel a, table#messages tr.user_00 td.nickname a { color: #066; }
+	table#messages tr.user_01 td, table#messages tr.user_01 td.channel a, table#messages tr.user_01 td.nickname a { color: #660; }
+	table#messages tr.user_02 td, table#messages tr.user_02 td.channel a, table#messages tr.user_02 td.nickname a { color: #606; }
+	table#messages tr.user_03 td, table#messages tr.user_03 td.channel a, table#messages tr.user_03 td.nickname a { color: #060; }
+	table#messages tr.user_04 td, table#messages tr.user_04 td.channel a, table#messages tr.user_04 td.nickname a { color: #600; }
+	table#messages tr.user_05 td, table#messages tr.user_05 td.channel a, table#messages tr.user_05 td.nickname a { color: #006; }
+	table#messages tr.user_06 td, table#messages tr.user_06 td.channel a, table#messages tr.user_06 td.nickname a { color: #036; }
+	table#messages tr.user_07 td, table#messages tr.user_07 td.channel a, table#messages tr.user_07 td.nickname a { color: #360; }
+	table#messages tr.user_08 td, table#messages tr.user_08 td.channel a, table#messages tr.user_08 td.nickname a { color: #603; }
+	table#messages tr.user_09 td, table#messages tr.user_09 td.channel a, table#messages tr.user_09 td.nickname a { color: #306; }
+	table#messages tr.user_10 td, table#messages tr.user_10 td.channel a, table#messages tr.user_10 td.nickname a { color: #063; }
+	table#messages tr.user_11 td, table#messages tr.user_11 td.channel a, table#messages tr.user_11 td.nickname a { color: #630; }
+
+	table#messages th.time,
+	table#messages td.time,
+	table#messages th.channel,
+	table#messages td.channel,
+	table#messages th.nickname,
+	table#messages td.nickname {
+		padding-right: 1em;
+		white-space: nowrap;
+	}
+
+	table#messages th.message,
+	table#messages td.message {
+		width: 99%;
+	}
+
+	table#messages td.time {
+		font-size: 82.8%;
+		text-indent: 1em;
+	}
+
+	table#messages td.message {
+		font-family: Consolas, monospace;
+	}
+
+	table#messages tr.notice td {
+		font-size: 91.4%;
+	}
+	table#messages tr.notice td.time {
+		font-size: 82.8%;
+	}
+	table#messages tr.notice td,
+	table#messages tr.notice td.channel a,
+	table#messages tr.notice td.nickname a {
+		color: #999;
+	}
+	table#messages tr.notice a {
+		color: #66f;
+	}
+	table#messages tr.notice a:visited {
+		color: #a56adb;
+	}

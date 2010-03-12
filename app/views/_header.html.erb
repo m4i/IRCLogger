@@ -1,0 +1,23 @@
+<div id="header">
+	<h1><%= link_to 'IRC Log', :root %></h1>
+
+	<p id="link_to_list">
+		<%- unless current_page? :controller => 'channels' -%>
+		<%= link_to h('>> チャンネル一覧'), :controller => 'channels' %>
+		<%- end -%>
+		<%- unless current_page? :controller => 'users' -%>
+		<%= link_to h('>> ユーザ一覧'), :controller => 'users' %>
+		<%- end -%>
+	</p>
+
+	<form id="search_form">
+		<div>
+			<%= image_tag 'search.png' %>
+			<%= text_field_tag 'search', @search %>
+			<%= hidden_field_tag 'search_extra', @search_extra %>
+			<%= submit_tag '検索', :name => nil %>
+		</div>
+	</form>
+
+<%= yield :header -%>
+</div>

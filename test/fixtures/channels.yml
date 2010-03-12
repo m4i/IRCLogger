@@ -1,0 +1,15 @@
+staff:
+  name:  "#staff"
+  topic: null
+
+tech:
+  name:  "#tech"
+  topic: "Tech Talk に花を咲かせましょう"
+
+nanteyomu:
+  name:  "#nanteyomu"
+  topic: null
+
+wigit:
+  name:  "#wigit"
+  topic: null

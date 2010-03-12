@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+div#content table#users {
+	width: 100%;
+}
+
+	table#users th {
+		padding: 0.4em 0.7em;
+		color: #fff;
+		background-color: #6ad;
+		font-weight: bold;
+	}
+
+	table#users td {
+		padding: 0.3em 0.7em 0.3em 1.0em;
+	}
+
+	table#users tr.odd  td { background-color: #eff; }
+	table#users tr.even td { background-color: #cff; }
+
+	table#users td.name a {
+		color: #333;
+	}

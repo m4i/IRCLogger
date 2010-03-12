@@ -1,0 +1,18 @@
+<%- content_for :header do -%>
+	<div id="page_info">
+		<h2>チャンネル一覧</h2>
+	</div>
+<%- end -%>
+
+<table id="channels">
+	<tr>
+		<th class="name">チャンネル名</th>
+		<th class="topic">トピック</th>
+	</tr>
+	<%- @channels.each do |channel| -%>
+	<tr class="<%= cycle('odd', 'even') %>">
+		<td class="name"><%= link_to_channel h(channel.name), channel %></td>
+		<td class="topic"><%=h channel.topic %></td>
+	</tr>
+	<%- end -%>
+</table>

@@ -1,0 +1,8 @@
+/config/database.yml
+/config/irc_logger.yml
+/db/schema.rb
+/log/*.log
+/tmp/cache/*
+/tmp/pids/*
+/tmp/sessions/*
+/tmp/sockets/*
